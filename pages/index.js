@@ -29,13 +29,13 @@ export default function Profile() {
                 />
                 {/* <div className=" w-32 h-32  rounded-full bg-slate-400 animate-pulse"></div> */}
               </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">
+              <div className="text-sm text-slate-300 dark:text-gray-400">
                 {profile.fullname}
               </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">
+              <div className="text-sm text-slate-300 dark:text-gray-400">
                 {profile.title}
               </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">
+              <div className="text-sm  text-slate-300 dark:text-gray-400">
                 {profile.title2}
               </div>
 
