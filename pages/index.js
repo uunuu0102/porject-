@@ -51,8 +51,8 @@ export default function Profile() {
           </div>
 
           <div className="w-1/2 h-full flex items-end pr-10 justify-center gap-2 flex-col">
-            {profile2.map((row) => (
-              <div className="relative">
+            {profile2.map((row, i) => (
+              <div className="relative " key={i}>
                 <div className=" absolute h-[1px] w-20 -left-20 top-10 bg-slate-50  rounded-full ">
                   <div className=" text-sm text-slate-50">{row.name}</div>
                 </div>
