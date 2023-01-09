@@ -13,12 +13,7 @@ export default function Profile() {
 
   return (
     <>
-      <div className="h-screen w-screen flex items-center justify-center gap-8 relative">
-        <img
-          className="absolute w-screen h-screen -z-10 left-0 top-0"
-          src="fb.png"
-        />
-
+      <div className="h-screen w-screen flex items-center justify-center gap-8 bg-[url(/subtle-prism.svg)]">
         <div className="cart">
           <div className="w-1/2 h-full flex flex-col items-end justify-center">
             <div className="flex flex-col items-center w-80">
