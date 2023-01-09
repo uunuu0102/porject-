@@ -13,7 +13,11 @@ export default function Profile() {
 
   return (
     <>
-      <div className="h-screen w-screen flex items-center justify-center gap-8 bg-[url(/large-triangles.svg)]">
+      <div className="h-screen w-screen flex items-center justify-center gap-8 relative">
+        <img
+          src="Circuit Primary.svg"
+          className="absolute top-0 left-0 -z-10 w-full h-full object-cover "
+        ></img>
         <div className="cart">
           <div className="w-1/2 h-full flex flex-col items-end justify-center">
             <div className="flex flex-col items-center w-80">
