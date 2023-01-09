@@ -4,7 +4,7 @@ export default function Profile() {
       <div className="h-screen w-screen flex items-center justify-center gap-8 relative">
         <img
           className="absolute w-screen h-screen -z-10 left-0 top-0"
-          src="fb.png"
+          src="4338859.jpg"
         />
 
         <div className="cart">
