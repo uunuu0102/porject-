@@ -1,10 +1,22 @@
 export default function Profile() {
+  const profile = {
+    fullname: "C.Өнөрмаа",
+    title: "Програмист",
+    title2: "Мэдээлэл технологийн төв",
+  };
+
+  const profile2 = [
+    { name: "HTML", img: "OIP (2).jfif" },
+    { name: "SQL", img: "oracle_sql.png" },
+    { name: "Office 365", img: "R.png" },
+  ];
+
   return (
     <>
       <div className="h-screen w-screen flex items-center justify-center gap-8 relative">
         <img
           className="absolute w-screen h-screen -z-10 left-0 top-0"
-          src="1600w-JLofAI27pCg.png"
+          src="fb.png"
         />
 
         <div className="cart">
@@ -15,17 +27,21 @@ export default function Profile() {
                   src="dribbble_girl.gif"
                   className=" w-32 h-32  rounded-full hover:scale-125 hover:cursor-pointer animate-pulse "
                 />
-                {/* <div className="  w-32 h-32  rounded-full bg-slate-400 animate-pulse"></div> */}
+                {/* <div className=" w-32 h-32  rounded-full bg-slate-400 animate-pulse"></div> */}
               </div>
-              <h1 className=" font-bold text-slate-50">С.Өнөрмаа</h1>
-              <div className=" text-sm text-slate-50">Програмист</div>
-              <div className=" text-sm text-slate-50">
-                Мэдээлэл технологийн төв
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                {profile.fullname}
+              </div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                {profile.title}
+              </div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                {profile.title2}
               </div>
 
               <a
-                href="/page"
-                className="w-full h-full flex justify-center gap-1 mt-10"
+                href="http://localhost:3000/page"
+                className="w-full h-өглл flex justify-center gap-1 mt-10"
               >
                 <button className="bg-slate-50 bg-opacity-20 backdrop-blur-md rounded text-slate-50 w-[40%] py-1 hover:bg-sky-800 ">
                   Дэлгэрэнгүй
@@ -33,35 +49,20 @@ export default function Profile() {
               </a>
             </div>
           </div>
-          <div className="w-1/2 h-full flex items-end pr-10 justify-center gap-2 flex-col">
-            <div className="relative">
-              <div className=" absolute h-[1px] w-20 -left-20 top-10 bg-slate-50  rounded-full ">
-                <div className=" text-sm text-slate-50">HTML</div>
-              </div>
 
-              <img
-                className=" w-28 h-20 rounded-xl hover:scale-125 hover:cursor-pointer"
-                src="OIP (2).jfif"
-              />
-            </div>
-            <div className="relative">
-              <div className=" absolute h-[1px] w-20 -left-20 top-10 bg-slate-50  rounded-full ">
-                <div className=" text-sm text-slate-50">SQL</div>
+          <div className="w-1/2 h-full flex items-end pr-10 justify-center gap-2 flex-col">
+            {profile2.map((row) => (
+              <div className="relative">
+                <div className=" absolute h-[1px] w-20 -left-20 top-10 bg-slate-50  rounded-full ">
+                  <div className=" text-sm text-slate-50">{row.name}</div>
+                </div>
+
+                <img
+                  className=" w-28 h-20 rounded-xl hover:scale-125 hover:cursor-pointer"
+                  src={row.img}
+                />
               </div>
-              <img
-                className=" w-28 h-20 rounded-xl hover:scale-125 hover:cursor-pointer "
-                src="oracle_sql.png"
-              />
-            </div>
-            <div className="relative">
-              <div className=" absolute h-[1px] w-20 -left-20 top-10 bg-slate-50  rounded-full ">
-                <div className=" text-sm text-slate-50">Office 365</div>
-              </div>
-              <img
-                className=" w-28 h-20 rounded-xl hover:scale-125 hover:cursor-pointer"
-                src="R.png"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </div>
