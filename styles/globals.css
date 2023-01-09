@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow {
+  color: #fff;
+  position: relative;
+}
+
+.shadow::before,
+.shadow::after {
+  content: "";
+  position: absolute;
+  @apply rounded-xl;
+  top: -15px;
+  left: -15px;
+  background: linear-gradient(45deg, red, blue, green);
+  background-size: 400%;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  z-index: -1;
+  animation: animate 25s linear infinite;
+}
+
+.shadow::after {
+  filter: blur(25px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.cart {
+  @apply relative pl-12 shadow py-8 bg-slate-100 bg-opacity-50  rounded-xl flex items-center border border-slate-50/50;
+}
