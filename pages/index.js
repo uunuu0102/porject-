@@ -4,7 +4,7 @@ export default function Profile() {
       <div className="h-screen w-screen flex items-center justify-center gap-8 relative">
         <img
           className="absolute w-screen h-screen -z-10 left-0 top-0"
-          src="4338859.jpg"
+          src="1600w-JLofAI27pCg.png"
         />
 
         <div className="cart">
@@ -15,7 +15,7 @@ export default function Profile() {
                   src="dribbble_girl.gif"
                   className=" w-32 h-32  rounded-full hover:scale-125 hover:cursor-pointer animate-pulse "
                 />
-                {/* <div className=" w-32 h-32  rounded-full bg-slate-400 animate-pulse"></div> */}
+                {/* <div className="  w-32 h-32  rounded-full bg-slate-400 animate-pulse"></div> */}
               </div>
               <h1 className=" font-bold text-slate-50">С.Өнөрмаа</h1>
               <div className=" text-sm text-slate-50">Програмист</div>
