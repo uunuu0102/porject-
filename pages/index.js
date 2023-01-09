@@ -24,7 +24,7 @@ export default function Profile() {
               </div>
 
               <a
-                href="http://localhost:3000/page"
+                href="/page"
                 className="w-full h-өглл flex justify-center gap-1 mt-10"
               >
                 <button className="bg-slate-50 bg-opacity-20 backdrop-blur-md rounded text-slate-50 w-[40%] py-1 hover:bg-sky-800 ">
